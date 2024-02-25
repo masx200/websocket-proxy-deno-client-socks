@@ -5,5 +5,8 @@
     "https://esm.sh/v135/@types/lodash-es@~4.17/index.d.ts": "https://esm.sh/v135/@types/lodash-es@4.17.12/index.d.ts",
     "https://esm.sh/v135/@types/lodash@4.14.202/index": "https://esm.sh/v135/@types/lodash@4.14.202/index~.d.ts"
   },
-  "remote": {}
+  "remote": {
+    "https://esm.sh/lodash-es@4.17.21": "460848e64379750386465df2bfcbe530dc5be584cabb39816e0dec105e5f9af2",
+    "https://esm.sh/v135/lodash-es@4.17.21/denonext/lodash-es.mjs": "ca6d37e6a1271d1bd8920da5ff11f7d05465f5d7961d5d09b44db331838981d7"
+  }
 }
