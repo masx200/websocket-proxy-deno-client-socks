@@ -57,6 +57,13 @@ export async function socks5_server_first_username_password(
         conn.readable,
         2,
     );
+
+    if (!(b === negotitation_buffer[1] && a === negotitation_buffer[0])) {
+        console.log("用户名和密码验证失败");
+        await writer.write(new Uint8Array([0x01, 0x01]));
+        conn.close();
+        return false;
+    }
     const auth_buffer = await readBytesWithBYOBReader(
         conn.readable,
         negotitation_buffer.length - 2,
