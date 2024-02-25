@@ -26,8 +26,12 @@ deno task client
     //本地socks服务器的端口
     "proxy_client_port": 9000,
     //本地socks服务器的地址
-    "proxy_client_hostname": "0.0.0.0"
+    "proxy_client_hostname": "0.0.0.0",
+    //远程服务器的用户名,可以为null
+    "server_username": "hello",
+    //远程服务器的用户名,可以为null
+    "server_password": "world"
 }
 ```
 
-也可以使用websocket-proxy-client-socks-node作为客户端
+也可以使用 websocket-proxy-client-socks-node 作为客户端
