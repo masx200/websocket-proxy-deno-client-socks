@@ -1,6 +1,6 @@
 # websocket-proxy-deno-client-socks
 
-支持基本身份验证,用户名和密码
+服务端 websocket 和客户端 socks5 都支持基本身份验证,用户名和密码
 
 可以与 websocket-proxy-deno-deploy 一起使用
 
@@ -33,8 +33,12 @@ deno task client
     "proxy_client_hostname": "0.0.0.0",
     //远程服务器的用户名,可以为null
     "server_username": "hello",
-    //远程服务器的用户名,可以为null
-    "server_password": "world"
+    //远程服务器的密码,可以为null
+    "server_password": "world",
+    //本地服务器的用户名,可以为null
+    "client_username": "foooo",
+    //本地服务器的密码,可以为null
+    "client_password": "barrr"
 }
 ```
 
