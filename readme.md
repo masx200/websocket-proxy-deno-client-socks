@@ -1,3 +1,5 @@
+## 注意！此项目与deno2.0以上版本不兼容，请使用deno1.x版本运行！
+
 # websocket-proxy-deno-client-socks
 
 服务端 websocket 和客户端 socks5 都支持基本身份验证,用户名和密码
