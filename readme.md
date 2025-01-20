@@ -1,4 +1,8 @@
-## 注意！此项目与deno2.0以上版本不兼容，请使用deno1.x版本运行！
+## 注意！此项目与可能 `deno2.0` 以上版本不兼容，请使用 `deno1.x` 版本运行！
+
+```shell
+deno run --unstable-net -A ./client.ts
+```
 
 # websocket-proxy-deno-client-socks
 

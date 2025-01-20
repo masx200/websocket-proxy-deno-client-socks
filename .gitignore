@@ -1,2 +1,4 @@
 
 .vscode/settings.json
+deno.lock
+node_modules

@@ -1,7 +1,8 @@
 import { get_proxy_client_port } from "./get_proxy_client_port.ts";
 import { socks5_server } from "./socks5_server.ts";
 import config from "./config.json" with { type: "json" };
-
+if(import.meta.main) {
+    console.log(`Proxy client listening on port ${get_proxy_client_port()}`);
 const listener = Deno.listen({
     port: get_proxy_client_port(),
     transport: "tcp",
@@ -16,4 +17,5 @@ try {
     }
 } catch (error) {
     console.error(error);
+}
 }
